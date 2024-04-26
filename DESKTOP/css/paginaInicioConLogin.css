@@ -81,7 +81,7 @@ body {
   align-items: center;
   padding: 1rem;
   background: linear-gradient(180deg, #8D12C9 0%, #C76DEE 46.82%, #F2F5F3 87.78%);
-  width: 100%; /* Ocupar todo el ancho disponible */
+  width: 100%; 
 }
 
 /* Estilo zona 1 */
@@ -153,6 +153,7 @@ body {
   top: -20rem;
   left:-45rem;
   cursor:pointer;
+ 
 }
 
 .imagen-zona-3-3 {
@@ -167,27 +168,28 @@ body {
   left:-45rem;
 }
 
+
 /* Estilo zona 4 */
 .contenedor-zona-4 {
   display: flex;
 }
 
 .imagen-zona-4-1 {
-  width: 40%;
-  height: 40rem;
+  width: 50%;
+  height: 50rem;
   position: relative;
-  left: 15rem;
+  left: 5rem;
   top: -20rem;
   z-index: 1; 
-  cursor: pointer;
+  box-shadow: 0px 0px 50px #620062;
 }
 
 .texto-zona-4-1,
 .texto-zona-4-2,
 .texto-zona-4-3 {
-  width: 60%;
+  width: 70%;
   position: relative;
-  right: -20rem; 
+  right: -10rem; 
   text-align: center;
   top: -20rem;
   z-index: 0; 
@@ -195,22 +197,221 @@ body {
 }
 
 .texto-zona-4-1 {
-  box-shadow: 2px 0px 0px rgba(104, 8, 104, 1);
+ 
   padding-top: 2rem;
 }
 
 .texto-zona-4-2 {
-  box-shadow: 2px 0px 0px rgba(104, 8, 104, 1);
+  
   padding-top: 2rem;
 }
 
 .texto-zona-4-3 {
-  box-shadow: 2px 2px 0px rgba(104, 8, 104, 1);
   padding-top: 5rem;
 }
 
+.imagen-zona-4-2 {
+  width: 30%;
+  position: relative;
+  left: 90rem;
+  top: -30rem; 
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.imagen-zona-4-2:hover {
+  transform: scale(1.2); 
+}
+
+/* Estilo zona 5 */
+
+.texto-zona-5 {
+  font-size: 4rem; 
+  text-align: center; 
+  color: #F2EB32; 
+  background-color: #620062; 
+  padding: 2rem; 
+  margin-top: -50rem; 
+  margin-bottom: 10rem;
+  width: 100%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  letter-spacing: 2px; 
+  text-transform: uppercase; 
+}
+
+/*Estilo zona 6 - card */
+
+.row {
+  display: flex;
+  justify-content: space-between; 
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.card {
+  width: 30%; 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-text {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.card-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff; 
+}
+
+.card-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #fff; 
+}
+
+.btn-comprar {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  padding: 10px 0; 
+  background-color: #F2EB32; 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; 
+}
+
+.btn-comprar:hover {
+  background-color: #620062; 
+}
 
 
+/*--------------- FOOTER ---------------*/
+/*SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128*/
+footer {
+  font-size: 1.6rem;
+  padding: 4rem 2rem; /* Ajustar los valores de padding */
+  background: linear-gradient(180deg, #F2F5F3 0%, #C76DEE 46.82%, #8D12C9 87.78%);
+  overflow: auto; 
+  margin-top: 20rem;
+}
 
+.grid--footer-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 2rem; 
+}
+
+.footer-heading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #424242;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #ebcc49;
+}
+
+.logo{
+  width: 15rem;
+  height: 15rem;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.redes {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-top: 1rem;
+  margin-right: 4rem;
+  background-color: #4242420b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #424242;
+  margin-top: auto;
+}
+
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.idioma-boton {
+  padding: 1.2rem 8rem 1.2rem 8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border: 2px solid #424242;
+  color: #424242;
+  border-radius: 0.5rem;
+  background-color: #4242420b;
+  cursor: pointer;
+
+}
 
 
