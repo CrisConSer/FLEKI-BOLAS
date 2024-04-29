@@ -1,88 +1,148 @@
-// Obtener las imágenes de la zona 3
-const imagenZona31 = document.querySelectorAll('.imagen-zona-3-1');
-const imagenZona32 = document.querySelectorAll('.imagen-zona-3-2');
+document.addEventListener('DOMContentLoaded', function() {
+  // Obtener las imágenes de la zona 3
+  const imagenZona31 = document.querySelectorAll('.imagen-zona-3-1');
+  const imagenZona32 = document.querySelectorAll('.imagen-zona-3-2');
 
-// Obtener el contenedor de la zona 4
-const contenedorZona4 = document.querySelector('.contenedor-zona-4');
+  // Obtener el contenedor de la zona 4
+  const contenedorZona4 = document.querySelector('.contenedor-zona-4');
 
-// Agregar evento de clic a todas las imágenes de la zona 3
-imagenZona32.forEach(imagen => {
-  imagen.addEventListener('click', function() {
-  // Cambiar el contenido de contenedor-zona-4 al hacer clic en imagen-zona-3-2
-  contenedorZona4.innerHTML = `
-  <div class="card-equipo">
-  <div class="card-jugadora">
-    <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
-    <div class="card-texto">
-      <p>Nombre: Cris</p>
-      <p>Posición: Revés</p>
-      <p>Pala: Bullpadel y StarVie</p>
+  // Agregar evento de clic a todas las imágenes de la zona 3
+  imagenZona32.forEach(imagen => {
+    imagen.addEventListener('click', function() {
+      // Cambiar el contenido de contenedor-zona-4 al hacer clic en imagen-zona-3-2
+      contenedorZona4.innerHTML = `<div class="card-equipo">
+      <div class="card-jugadora">
+        <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
+        <div class="card-texto">
+          <p>Nombre: Cris</p>
+          <p>Posición: Revés</p>
+          <p>Pala: Bullpadel y StarVie</p>
+        </div>
+      </div>
+    
+      <div class="card-jugadora">
+        <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
+        <div class="card-texto">
+          <p>Nombre: Cris</p>
+          <p>Posición: Revés</p>
+          <p>Pala: Bullpadel y StarVie</p>
+        </div>
+      </div>
+    
+      <div class="card-jugadora">
+        <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
+        <div class="card-texto">
+          <p>Nombre: Cris</p>
+          <p>Posición: Revés</p>
+          <p>Pala: Bullpadel y StarVie</p>
+        </div>
+      </div>
+    
+      <div class="card-jugadora">
+        <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
+        <div class="card-texto">
+          <p>Nombre: Cris</p>
+          <p>Posición: Revés</p>
+          <p>Pala: Bullpadel y StarVie</p>
+        </div>
+      </div>
+    
+      <div class="card-jugadora">
+        <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
+        <div class="card-texto">
+          <p>Nombre: Cris</p>
+          <p>Posición: Revés</p>
+          <p>Pala: Bullpadel y StarVie</p>
+        </div>
+      </div>
+    
+      <div class="card-jugadora">
+        <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
+        <div class="card-texto">
+          <p>Nombre: Cris</p>
+          <p>Posición: Revés</p>
+          <p>Pala: Bullpadel y StarVie</p>
+        </div>
+      </div>
+    
+      <div class="card-jugadora">
+        <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
+        <div class="card-texto">
+          <p>Nombre: Cris</p>
+          <p>Posición: Revés</p>
+          <p>Pala: Bullpadel y StarVie</p>
+        </div>
+      </div>
+    
+      <div class="card-jugadora">
+        <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
+        <div class="card-texto">
+          <p>Nombre: Cris</p>
+          <p>Posición: Revés</p>
+          <p>Pala: Bullpadel y StarVie</p>
+        </div>
+      </div>
     </div>
-  </div>
+      `;
+    });
+  });
 
-  <div class="card-jugadora">
-    <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
-    <div class="card-texto">
-      <p>Nombre: Cris</p>
-      <p>Posición: Revés</p>
-      <p>Pala: Bullpadel y StarVie</p>
-    </div>
-  </div>
+  // Obtener la imagen y el párrafo "Ver más"
+  const imagenZona7 = document.querySelector('.imagen-zona-7-1');
+  const verMas = document.querySelector('.texto-zona-7-1');
 
-  <div class="card-jugadora">
-    <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
-    <div class="card-texto">
-      <p>Nombre: Cris</p>
-      <p>Posición: Revés</p>
-      <p>Pala: Bullpadel y StarVie</p>
-    </div>
-  </div>
+  // Definir las rutas de las imágenes
+  const imagenes = [
+    "css/imagen/imagen-zona-7-2.jpg",
+    "css/imagen/imagen-zona-7-3.jpg",
+    "css/imagen/imagen-zona-7-1.jpg",
 
-  <div class="card-jugadora">
-    <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
-    <div class="card-texto">
-      <p>Nombre: Cris</p>
-      <p>Posición: Revés</p>
-      <p>Pala: Bullpadel y StarVie</p>
-    </div>
-  </div>
+    // Agrega más rutas de imágenes según sea necesario
+  ];
 
-  <div class="card-jugadora">
-    <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
-    <div class="card-texto">
-      <p>Nombre: Cris</p>
-      <p>Posición: Revés</p>
-      <p>Pala: Bullpadel y StarVie</p>
-    </div>
-  </div>
+  // Inicializar un contador para el índice de la imagen actual
+  let indiceImagen = 0;
 
-  <div class="card-jugadora">
-    <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
-    <div class="card-texto">
-      <p>Nombre: Cris</p>
-      <p>Posición: Revés</p>
-      <p>Pala: Bullpadel y StarVie</p>
-    </div>
-  </div>
-
-  <div class="card-jugadora">
-    <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
-    <div class="card-texto">
-      <p>Nombre: Cris</p>
-      <p>Posición: Revés</p>
-      <p>Pala: Bullpadel y StarVie</p>
-    </div>
-  </div>
-
-  <div class="card-jugadora">
-    <img src="css/imagen/cris.jpeg" alt="cris" class="card-imagen">
-    <div class="card-texto">
-      <p>Nombre: Cris</p>
-      <p>Posición: Revés</p>
-      <p>Pala: Bullpadel y StarVie</p>
-    </div>
-  </div>
-</div>
-  `;
+  // Agregar evento de clic al párrafo "Ver más"
+  verMas.addEventListener('click', function() {
+    // Cambiar la imagen cuando se hace clic en "Ver más"
+    if (indiceImagen < imagenes.length - 1) {
+      // Si hay más imágenes disponibles, cambia a la siguiente imagen
+      indiceImagen++;
+    } else {
+      // Si ya has mostrado todas las imágenes, vuelve a la primera imagen
+      indiceImagen = 0;
+    }
+    // Actualizar la ruta de la imagen
+    imagenZona7.src = imagenes[indiceImagen];
+  });
 });
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

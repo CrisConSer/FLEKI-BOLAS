@@ -50,7 +50,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  width: 100%; /* Ocupar todo el ancho disponible */
+  width: 100%; 
+  font-weight:900;
 }
 
 /* Estilos para el logo */
@@ -65,6 +66,7 @@ body {
 .icono-usuario {
   width: 6.3125rem;
   height: 6.625rem;
+  cursor: pointer;
 }
 
 /* Estilos para el texto del equipo */
@@ -72,7 +74,47 @@ body {
   color: #002B09;
   font-size: 1.8rem;
   margin-left: 2rem;
+  cursor: pointer;
 }
+
+.fleki-bolas-padel-team:hover{
+  color:#F2EB32;
+}
+
+.sobre-el-equipo {
+  color: #002B09;
+  font-size: 1.8rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.sobre-el-equipo:hover{
+  color:#F2EB32;
+}
+
+.contacto {
+  color: #002B09;
+  font-size: 1.8rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.contacto:hover{
+  color:#F2EB32;
+}
+
+.accede-a-tu-cuenta{
+  color: #002B09;
+  font-size: 1.8rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.accede-a-tu-cuenta:hover{
+  color:#F2EB32;
+}
+
+
 
 /* Estilos para el menú de navegación */
 .navegacion {
@@ -302,6 +344,52 @@ body {
 .btn-comprar:hover {
   background-color: #620062; 
 }
+
+
+/* Estilo zona 7 */
+
+.texto-zona-7 {
+  font-size: 4rem; 
+  text-align: center; 
+  color: #F2EB32; 
+  background-color: #620062; 
+  padding: 2rem; 
+  margin-top: 5rem;
+  width: 100%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  letter-spacing: 2px; 
+  text-transform: uppercase; 
+}
+
+.imagen-zona-7{
+  display: flex;
+  align-items: center;
+}
+
+.imagen-zona-7-1{
+  width: 50%;
+  height: 50rem;
+  position: relative;
+  z-index: -1;
+  box-shadow: 0px 0px 50px #620062;
+  margin-top: 5rem;
+  margin-left: 3rem;
+  border-radius: 2rem;
+}
+
+.texto-zona-7-1 {
+  font-size: 5rem;
+  color: #620062;
+  margin-top: 1rem;
+  margin-left: 10rem;
+  text-align: center;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
 
 
 /*--------------- FOOTER ---------------*/
