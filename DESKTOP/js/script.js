@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Obtener el contenedor de la zona 4
   const contenedorZona4 = document.querySelector('.contenedor-zona-4');
+  const contenedorZona4bis = document.querySelector('.contenedor-zona-4-bis');
 
   // Agregar evento de clic a todas las imágenes de la zona 3
   imagenZona32.forEach(imagen => {
@@ -84,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
       `;
+    contenedorZona4bis.style.display = 'none'; 
     });
   });
 
