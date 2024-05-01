@@ -164,13 +164,23 @@ body {
 
 /* CALENDARIO */
 
-.calendario{
+.calendario {
   text-align: center;
-  width: 500px;
+  width: 1500px; 
+  margin: 0 auto; 
   margin-top: 5rem;
-  display: grid;
+  display: flex; 
+  justify-content: space-between; 
 }
 
+.mes{
+  width: 45rem;
+
+}
+
+.calendario h1 {
+  grid-area: titulo; 
+}
 
 ol{
   list-style: none;
@@ -179,9 +189,15 @@ ol{
   padding: 0;
 }
 
+li{
+  padding-top: 1rem;
+}
+
+
+
 .dias-semana{
   background-color: #C76DEE;
-  font-weight: 600;
+  font-weight: 900;
   text-align: center;
 }
 
@@ -193,8 +209,70 @@ ol{
   grid-column-start: 5;
 }
 
+.dia-con-entrenos {
+  position: relative; 
+}
 
+.bola-entrenos {
+  width: 2rem; 
+  height: auto; 
+  position: absolute; 
+  top: 60%; 
+  left: 80%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
 
+.dia-con-torneos {
+  position: relative; 
+}
+
+.torneos {
+  width: 4rem; 
+  height: auto; 
+  position: absolute; 
+  top: 60%; 
+  left: 80%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
+
+.dia-con-ligas {
+  position: relative; 
+}
+
+.ligas {
+  width: 4rem; 
+  height: auto; 
+  position: absolute; 
+  top: 60%; 
+  left: 80%; 
+  transform: translate(-50%, -50%); 
+  cursor: pointer;
+}
+
+.tarjeta-informacion {
+  width: 23rem;
+  text-align: left;
+  display: none; 
+  position: absolute;
+  background-color: #F2EB32;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 100;
+}
+
+.dia-con-entrenos:hover .tarjeta-informacion {
+  display: block; 
+}
+
+.dia-con-torneos:hover .tarjeta-informacion {
+  display: block; 
+}
+
+.dia-con-ligas:hover .tarjeta-informacion {
+  display: block; 
+}
 
 
 

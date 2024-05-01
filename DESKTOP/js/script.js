@@ -121,6 +121,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+function mostrarInfo() {
+  var tarjeta = document.getElementById("tarjeta-info");
+  tarjeta.style.display = "block";
+}
+
+function ocultarInfo() {
+  var tarjeta = document.getElementById("tarjeta-info");
+  tarjeta.style.display = "none";
+}
+
+
+
 
 
 
