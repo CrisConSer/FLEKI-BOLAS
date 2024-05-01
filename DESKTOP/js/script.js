@@ -132,6 +132,23 @@ function ocultarInfo() {
 }
 
 
+// Obtener el contenedor del calendario
+const calendario = document.querySelector('.calendario');
+
+// Obtener las flechas izquierda y derecha
+const flechaIzquierda = document.querySelector('.flecha-izquierda');
+const flechaDerecha = document.querySelector('.flecha-derecha');
+
+// Configurar el desplazamiento al presionar las flechas
+flechaDerecha.addEventListener('click', () => {
+  calendario.scrollLeft += 150; // Desplazar 150 píxeles hacia la derecha
+});
+
+flechaIzquierda.addEventListener('click', () => {
+  calendario.scrollLeft -= 150; // Desplazar 150 píxeles hacia la izquierda
+});
+
+
 
 
 

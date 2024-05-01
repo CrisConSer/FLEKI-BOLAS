@@ -272,7 +272,7 @@ body {
   font-size: 4rem; 
   text-align: center; 
   color: #F2EB32; 
-  background-color: #620062; 
+  background-color: #8D12C9;  
   padding: 2rem; 
   margin-top: -50rem; 
   margin-bottom: 10rem;
@@ -342,7 +342,7 @@ body {
 }
 
 .btn-comprar:hover {
-  background-color: #620062; 
+  background-color: #8D12C9;  
 }
 
 
@@ -352,7 +352,7 @@ body {
   font-size: 4rem; 
   text-align: center; 
   color: #F2EB32; 
-  background-color: #620062; 
+  background-color: #8D12C9; 
   padding: 2rem; 
   margin-top: 5rem;
   width: 100%; 

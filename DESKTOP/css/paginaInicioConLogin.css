@@ -121,7 +121,7 @@ body {
   font-size: 4rem; 
   text-align: center; 
   color: #F2EB32; 
-  background-color: #620062; 
+  background-color: #8D12C9; 
   padding: 2rem; 
   margin-bottom: 10rem;
   width: 100%; 
@@ -166,16 +166,21 @@ body {
 
 .calendario {
   text-align: center;
-  width: 1500px; 
+  overflow-x: auto;
+  width: 100%; 
   margin: 0 auto; 
   margin-top: 5rem;
   display: flex; 
   justify-content: space-between; 
+  
 }
 
 .mes{
-  width: 45rem;
-
+  width: 50rem;
+  flex-shrink: 0;
+  max-width: 45rem;
+  margin-right: 3rem;
+  margin-left: 2rem;
 }
 
 .calendario h1 {
@@ -193,8 +198,6 @@ li{
   padding-top: 1rem;
 }
 
-
-
 .dias-semana{
   background-color: #C76DEE;
   font-weight: 900;
@@ -207,6 +210,18 @@ li{
 
 .primer-dia-marzo{
   grid-column-start: 5;
+}
+
+.primer-dia-abril{
+  grid-column-start: 1;
+}
+
+.primer-dia-mayo{
+  grid-column-start: 4;
+}
+
+.primer-dia-junio{
+  grid-column-start: 6;
 }
 
 .dia-con-entrenos {
@@ -259,7 +274,7 @@ li{
   background-color: #F2EB32;
   border: 1px solid #ccc;
   padding: 10px;
-  z-index: 100;
+  z-index: 200;
 }
 
 .dia-con-entrenos:hover .tarjeta-informacion {
@@ -274,6 +289,22 @@ li{
   display: block; 
 }
 
+/* Estilo de la barra de desplazamiento del calendario */
+
+.calendario::-webkit-scrollbar {
+  height: 1rem;
+}
+
+.calendario::-webkit-scrollbar-thumb {
+  background-color: #F2EB32; 
+  border-radius: 2rem; 
+
+}
+
+.calendario::-webkit-scrollbar-track {
+  background-color: #8D12C9; 
+  margin-top: 120px;
+}
 
 
 
